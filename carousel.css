@@ -1,0 +1,135 @@
+/*
+    图片大小
+*/
+.loop-image{
+    width: 300px;
+    height: 300px;
+}
+
+/*
+1
+*/
+#carousel1 ul {
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+}
+#carousel1 ul li {
+    list-style: none;
+    position: absolute;
+}
+#first {
+    animation: pic_1 15s infinite;
+}
+#second{
+    animation: pic_2 15s infinite;
+}
+#third{
+    animation: pic_3 15s infinite;
+}
+@keyframes pic_1{
+    0% {opacity: 1;}
+    25% { opacity: 1;}
+    26% { opacity: 0;}
+    40% { opacity: 0;}
+    91% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+@-webkit-keyframes pic_2 {
+    0% { opacity: 0;}
+    25% { opacity: 0;}
+    26% { opacity: 1;}
+    60% { opacity: 1;}
+    61% { opacity: 0;}
+    100% { opacity: 0;}
+}
+@-webkit-keyframes pic_3 {
+    0% { opacity: 0;}
+    60% { opacity: 0;}
+    61% { opacity: 1;}
+    91% { opacity: 1;}
+    100% { opacity: 0;}
+}
+
+/*
+2向上的轮播图
+*/
+#carousel2 ul {
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+}
+#carousel2 ul li{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: lb 12s  cubic-bezier(0.3,0.4,0.3,1) 0s infinite;
+}
+
+@keyframes lb {
+    0%{
+        top: 0%;
+    }
+    25%{
+        top:0%;
+    }
+    30%{
+        top:-100%;
+    }
+    55%{
+        top:-100%;
+    }
+    60%{
+        top:-200%;
+    }
+    85%{
+        top:-200%;
+    }
+    90%{
+        top:0%;
+    }
+}
+
+/*
+3 向右的轮播图
+*/
+#carousel3 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin-left: 100px;
+}
+#carousel3-1{
+    position: absolute;
+    width: 500%;
+    height: 100%;
+    font-size: 0;
+    transform: translate(0,0); /* 初始位置位移 */
+    animation: loop 10s linear infinite;
+}
+
+/* 创建loop动画规则 */
+/*
+   轮播5张，总耗时10s，单张应为2s(20%)
+   单张切换动画耗时500ms，停留1500ms
+*/
+@keyframes loop {
+    0% {transform: translate(0,0);}
+    15% {transform: translate(0,0);} /* 停留1500ms */
+
+    20% {transform: translate(-20%,0);} /* 切换500ms 位移-20% */
+    35% {transform: translate(-20%,0);}
+
+    40% {transform: translate(-40%,0);}
+    55% {transform: translate(-40%,0);}
+
+    60% {transform: translate(-60%,0);}
+    75% {transform: translate(-60%,0);}
+
+    80% {transform: translate(-80%,0);}
+    95% {transform: translate(-80%,0);}
+
+    100% {transform: translate(0,0);} /* 复位到第一张图片 */
+}

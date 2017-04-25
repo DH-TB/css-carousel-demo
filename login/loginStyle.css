@@ -1,0 +1,15 @@
+#carousel1{
+    border-radius: 25px;
+    background-color: bisque;
+    width: 720px;
+    height: 320px;
+    margin-top: 200px;
+    margin-left: 300px;
+}
+
+.row{
+    margin-top:-200px;
+}
+.rowContent{
+    margin-top: -50px;
+}
