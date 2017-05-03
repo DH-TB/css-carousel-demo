@@ -1,15 +1,63 @@
+body{
+    background:url(../images/timg.jpg) no-repeat;
+    background-size: 100%;
+}
 #carousel1{
     border-radius: 25px;
-    background-color: bisque;
-    width: 720px;
+    background-color: black;
+    opacity:0.5;
+    width: 320px;
     height: 320px;
     margin-top: 200px;
-    margin-left: 300px;
+}
+.content{
+    margin-top: -280px;
+}
+ul{
+    border-bottom: solid 1px;
+}
+li{
+    margin-top: 20px;
+    font-size: large;
+    display:inline;
+    text-decoration: none;
+}
+#li1{
+    margin-left: 40px;
+}
+#li2{
+    margin-left: 135px;
+}
+#hr{
+    margin-top: -250px;
 }
 
-.row{
-    margin-top:-200px;
+#inputGroup{
+    margin-top: 50px;
+    margin-left: 40px;
 }
-.rowContent{
-    margin-top: -50px;
+::-webkit-input-placeholder {
+    padding-left: 5px;
+}
+
+#img1
+{
+    background: url(../images/user.png) no-repeat;
+    background-position: 5%;
+    border-radius:15px;
+    text-indent: 10%;
+}
+#img2
+{
+    background: url(../images/password.png) no-repeat;
+    background-position: 5%;
+    border-radius:15px;
+    text-indent: 10%;
+}
+#img3
+{
+    background: url(../images/password.png) no-repeat;
+    background-position: 5%;
+    border-radius:15px;
+    text-indent: 10%;
 }

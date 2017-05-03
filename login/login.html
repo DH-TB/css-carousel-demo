@@ -9,27 +9,27 @@
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-<div id="carousel1">
-    <div>
-        <ul>
-            <li id="first">
-                <img src="../images/1.png" alt="图片1" class="loop-image">
-            </li>
-            <li id="second">
-                <img src="../images/4.png" alt="图片2" class="loop-image">
-            </li>
-            <li id="third">
-                <img src="../images/3.jpg" alt="图片3" class="loop-image">
-            </li>
-        </ul>
-    </div>
-    <div class="row">
-        <div class="col-md-5 col-md-offset-6 rowContent">
-            用户名<input type="text" class="form-control"/>
-            密码<input type="text" class="form-control"/>
-            重复密码<input type="password" class="form-control"/>
+<div id="carousel1" class="col-md-offset-7">
+    <ul>
+        <li id="li1"><a href="#">登陆</a></li>
+        <li id="li2"><a href="#">注册</a></li>
+    </ul>
+    <hr id="hr"/>
+</div>
+
+<div class="row content">
+    <div class="col-md-offset-7">
+        <div class="col-md-5" id="inputGroup">
+            <input type="text" class="form-control" id="img1" placeholder="用户名"/>
+            <br/>
+            <input type="text" class="form-control" id="img2" placeholder="密码"/>
+            <br/>
+            <input type="password" class="form-control" id="img3" placeholder="重复密码"/>
+            <br/>
+            <button class="btn btn-default form-control">登 录</button>
         </div>
     </div>
 </div>
+
 </body>
 </html>
